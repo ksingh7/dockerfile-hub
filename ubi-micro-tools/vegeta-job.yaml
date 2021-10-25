@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: vegeta
+spec:
+  parallelism: 10
+  completions: 10
+  backoffLimit: 0
+  template:
+    metadata:
+      name: vegeta
+    spec:
+      containers:
+      - name: vegeta
+        image: quay.io/karansingh/vegeta-ubi
+        command: ["/bin/sh","-c"]
+        args: ["echo 'GET http://golang-service1:8888' | vegeta attack -duration=60s -rate=0 -max-workers=64 | tee /tmp/results.bin ; sleep 3600" ]
+      restartPolicy: OnFailure

@@ -1,0 +1,228 @@
+{
+  "version": "1.0",
+  "engine": "darwin|Transformer|1.37.0|latest|latest",
+  "containerized": false,
+  "host_distro": {
+    "name": "",
+    "version": "",
+    "display_name": "Big Sur (11.6)"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "python-hello-world-ubi",
+  "system": {
+    "type": "Linux",
+    "release": "5.10.47-linuxkit",
+    "distro": {
+      "name": "Red Hat Enterprise Linux",
+      "version": "8.4",
+      "display_name": "Red Hat Enterprise Linux 8.4 (Ootpa)"
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:915f459698ed64c7c2f03c00bb2ed983e15c6fb6389f46602e906e954e1750f0",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "python-hello-world-ubi:latest"
+      ]
+    },
+    "size": 168709004,
+    "size_human": "169 MB",
+    "create_time": "2021-10-25T15:56:05Z",
+    "docker_version": "20.10.8",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "8080/tcp"
+    ],
+    "os": "linux",
+    "labels": {
+      "architecture": "x86_64",
+      "build-date": "2021-09-14T16:32:53.929147",
+      "com.redhat.build-host": "cpt-1003.osbs.prod.upshift.rdu2.redhat.com",
+      "com.redhat.component": "ubi8-minimal-container",
+      "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+      "description": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.",
+      "distribution-scope": "public",
+      "io.k8s.description": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.",
+      "io.k8s.display-name": "Red Hat Universal Base Image 8 Minimal",
+      "io.openshift.expose-services": "",
+      "io.openshift.tags": "minimal rhel8",
+      "maintainer": "Red Hat, Inc.",
+      "name": "ubi8-minimal",
+      "release": "210",
+      "summary": "Provides the latest release of the minimal Red Hat Universal Base Image 8.",
+      "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.4-210",
+      "vcs-ref": "7256039d3c371a38cf13906dcf5688c19700c73b",
+      "vcs-type": "git",
+      "vendor": "Red Hat, Inc.",
+      "version": "8.4"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "container=oci"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 25775876,
+  "minified_image_size_human": "26 MB",
+  "minified_image": "python-hello-world-ubi.s",
+  "minified_image_has_data": true,
+  "minified_by": 6.545228724719191,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/915f459698ed64c7c2f03c00bb2ed983e15c6fb6389f46602e906e954e1750f0/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "python-hello-world-ubi-seccomp.json",
+  "apparmor_profile_name": "python-hello-world-ubi-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": false,
+      "id": "sha256:30557e4f1c497e5f72ebe090c650914a77f109d2b57e0bd0b74c3c65a94731cc",
+      "full_name": "registry.access.redhat.com/ubi8/ubi-minimal:latest",
+      "repo_name": "registry.access.redhat.com/ubi8/ubi-minimal",
+      "version_tag": "latest",
+      "raw_tags": [
+        "registry.access.redhat.com/ubi8/ubi-minimal:latest"
+      ],
+      "create_time": "2021-09-14T16:33:24Z",
+      "new_size": 102457544,
+      "new_size_human": "102 MB",
+      "instructions": [
+        {
+          "type": "NONE",
+          "time": "2021-09-14T16:33:12Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 102452890,
+          "size_human": "102 MB",
+          "command_snippet": "#no instruction info",
+          "command_all": "#no instruction info",
+          "comment": "Imported from -"
+        },
+        {
+          "type": "NONE",
+          "time": "2021-09-14T16:33:24Z",
+          "is_last_instruction": true,
+          "is_nop": false,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 4654,
+          "size_human": "4.7 kB",
+          "command_snippet": "#no instruction info",
+          "command_all": "#no instruction info",
+          "raw_tags": [
+            "registry.access.redhat.com/ubi8/ubi-minimal:latest"
+          ]
+        }
+      ]
+    },
+    {
+      "is_top_image": true,
+      "id": "sha256:915f459698ed64c7c2f03c00bb2ed983e15c6fb6389f46602e906e954e1750f0",
+      "full_name": "python-hello-world-ubi:latest",
+      "repo_name": "python-hello-world-ubi",
+      "version_tag": "latest",
+      "raw_tags": [
+        "python-hello-world-ubi:latest"
+      ],
+      "create_time": "2021-10-25T15:56:05Z",
+      "new_size": 66251460,
+      "new_size_human": "66 MB",
+      "base_image_id": "sha256:30557e4f1c497e5f72ebe090c650914a77f109d2b57e0bd0b74c3c65a94731cc",
+      "instructions": [
+        {
+          "type": "RUN",
+          "time": "2021-10-25T15:45:27Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:caf2b91a38d963a8ebffb165c1b66475cec53e5ec6f5d10cb78100d1397f05fe",
+          "layer_index": 0,
+          "size": 62176946,
+          "size_human": "62 MB",
+          "command_snippet": "RUN microdnf install -y python3",
+          "command_all": "RUN microdnf install -y python3",
+          "system_commands": [
+            "microdnf install -y python3"
+          ]
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2021-10-25T15:45:29Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:cbd6c96818cd855799ecdce0d9629696d60df10a34c00e18193bf905805e8c99",
+          "layer_index": 0,
+          "size": 0,
+          "params": "/app",
+          "command_snippet": "WORKDIR /app",
+          "command_all": "WORKDIR /app",
+          "system_commands": [
+            "mkdir -p /app"
+          ]
+        },
+        {
+          "type": "COPY",
+          "time": "2021-10-25T15:55:50Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:723d7659a80b5c5a277e84b9d47f0a80587a447fb5f5e130045279a527d3b7ab",
+          "layer_index": 0,
+          "size": 204,
+          "size_human": "204 B",
+          "params": "multi:876dad9d2565ab2bd20c0c048b89a22d8c98de392ba70d2704b1924e02f82b06 in ./",
+          "command_snippet": "COPY multi:876dad9d2565ab2bd20c0c048b89a22d8...",
+          "command_all": "COPY multi:876dad9d2565ab2bd20c0c048b89a22d8c98de392ba70d2704b1924e02f82b06 ./",
+          "target": "./",
+          "source_type": "multi"
+        },
+        {
+          "type": "RUN",
+          "time": "2021-10-25T15:56:03Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:9ffc2363ca6636fe6943dc186bae1ff53d5253d944c7ba731229e603e5b6d56f",
+          "layer_index": 0,
+          "size": 4074310,
+          "size_human": "4.1 MB",
+          "command_snippet": "RUN python3 -m pip install -r /app/requireme...",
+          "command_all": "RUN python3 -m pip install -r /app/requirements.txt",
+          "system_commands": [
+            "python3 -m pip install -r /app/requirements.txt"
+          ]
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2021-10-25T15:56:04Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e87f5ddc46e8385ca7780e81257c77c03bab4e1bb564dff6178842a6422f5a72",
+          "layer_index": 0,
+          "size": 0,
+          "params": "8080",
+          "command_snippet": "EXPOSE 8080",
+          "command_all": "EXPOSE 8080"
+        },
+        {
+          "type": "CMD",
+          "time": "2021-10-25T15:56:05Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"uvicorn\",\"main:app\",\"--host\",\"0.0.0.0\",\"--port\",\"8080\"]",
+          "command_snippet": "CMD [\"uvicorn\",\"main:app\",\"--host\",\"0.0.0.0\"...",
+          "command_all": "CMD [\"uvicorn\",\"main:app\",\"--host\",\"0.0.0.0\",\"--port\",\"8080\"]",
+          "raw_tags": [
+            "python-hello-world-ubi:latest"
+          ]
+        }
+      ]
+    }
+  ]
+}
